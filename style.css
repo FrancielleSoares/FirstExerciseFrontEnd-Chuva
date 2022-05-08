@@ -48,7 +48,7 @@ a {
     width: 220px;
     z-index: 100;
 }
-/*******div inside the div sidebar*/
+/*******  inside the div sidebar*/
     .palette-tropical-flavours .bg-gradient, .palette-tropical-flavours .topic-info-container .btn-create-topic, .topic-info-container .palette-tropical-flavours .btn-create-topic {
         background: linear-gradient(0deg,#ED7839 0%,#FFB455 100%);
     }
@@ -193,7 +193,10 @@ a {
                 a {
                     background-color: transparent;
                 }
-                    /* div */
+                    /* div user-menu-wrapper*/
+                    .user-menu-wrapper {
+                        line-height: 15px;
+                    }
                     .user-menu-wrapper .btn-group .picture-container {
                         border-radius: 100px;
                         box-shadow: 1px 1px 2px #a5a5a5;
@@ -202,11 +205,48 @@ a {
                     .mb-sm, .paper-card, .paper-card:not(:last-child), .coauthors-container h3 {
                         margin: 0 0 14px;
                     }
-                        /* div */
-                            /* div */
-
-
-                /* ul */
+                    .title-wrapper .btn-link {
+                        color: #FFF;
+                    }
+/******* inside the div sidebar-body, inside the div sidebar */
+/* div */
+.palette-tropical-flavours .bg-lighten, .palette-tropical-flavours .authors-list-container .author-card::before, .authors-list-container .palette-tropical-flavours .author-card::before, .palette-tropical-flavours #authors-container .author-card::before, #authors-container .palette-tropical-flavours .author-card::before, .palette-tropical-flavours .panel-heading, .palette-tropical-flavours .bg-active.active, .palette-tropical-flavours .m-gaussTabs__item--active {
+    background-color: #FDF1EB;
+}
+.series-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 208px;
+}
+.my-md {
+    margin: 26px 0;
+}
+/* div field (img)*/
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+    border: 0;
+}
+/* div */
+.menu-wrapper {
+    flex: 1;
+}
+/* section */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+/*inside the*/
+.list-unstyled {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
 
 
 /* 2/2 div do BODY */

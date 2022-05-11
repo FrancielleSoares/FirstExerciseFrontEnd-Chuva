@@ -51,23 +51,20 @@ a {
     z-index: 100;
 }
 /*******  inside the div sidebar*/
-    .palette-tropical-flavours .bg-gradient, .palette-tropical-flavours .topic-info-container .btn-create-topic, .topic-info-container .palette-tropical-flavours .btn-create-topic {
+    .bg-gradient, .topic-info-container .btn-create-topic, .topic-info-container .btn-create-topic {
         background: linear-gradient(0deg,#ED7839 0%,#FFB455 100%);
     }
     .title-wrapper {
         display: flex;
         flex-direction: row;
         align-items: center;
-        color: #FFF;
+        color: #FFFFFF;
         height: 68px;
     }
     .px-lg {
-        padding: 0 20px;
+        padding: 0 0px;
     }
     /*span*/
-    .col-xs-2 {
-        width: 16.6666666667%;
-    }
     .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
         float: left;
     }
@@ -121,12 +118,6 @@ a {
     h2, .h2 {
         font-size: 30px;
     }
-    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-        font-family: "Roboto",sans-serif;
-        font-weight: 500;
-        line-height: 1.1;
-        color: inherit;
-    }
    /*div  visible-xs*/
    .visible-xs {
         display: none !important;
@@ -141,15 +132,6 @@ a {
     .col-xs-2 {
         width: 16.6666666667%;
     }
-        /*div user-menu*/
-        .user-menu-wrapper {
-            line-height: 15px;
-        }
-        @media (min-width: 768px){
-            .user-menu-wrapper {
-                width: 80px;
-        }
-        }
             /*div*/
             .user-menu-wrapper .btn-group {
                 float: right;
@@ -165,19 +147,8 @@ a {
                     display: block;
                     height: 34px;
                 }
-                a {
-                    color: inherit;
-                }
-                a {
-                    text-decoration: none;
-                }
-                a {
-                    background-color: transparent;
-                }
+            
                     /* div user-menu-wrapper*/
-                    .user-menu-wrapper {
-                        line-height: 15px;
-                    }
                     .user-menu-wrapper .btn-group .picture-container {
                         border-radius: 100px;
                         box-shadow: 1px 1px 2px #a5a5a5;
@@ -191,7 +162,7 @@ a {
                     }
 /******* inside the div sidebar-body, inside the div sidebar */
 /* div */
-.palette-tropical-flavours .bg-lighten, .palette-tropical-flavours .authors-list-container .author-card::before, .authors-list-container .palette-tropical-flavours .author-card::before, .palette-tropical-flavours #authors-container .author-card::before, #authors-container .palette-tropical-flavours .author-card::before, .palette-tropical-flavours .panel-heading, .palette-tropical-flavours .bg-active.active, .palette-tropical-flavours .m-gaussTabs__item--active {
+.bg-lighten, .authors-list-container .author-card::before, .authors-list-container .author-card::before, #authors-container .author-card::before, #authors-container .author-card::before, .panel-heading, .bg-active.active, .m-gaussTabs__item--active {
     background-color: #FDF1EB;
 }
 .series-logo {
@@ -229,11 +200,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     list-style: none;
 }
     /*li's  series-menu-item*/
-    .palette-tropical-flavours .bg-lighten-hover {
+    .bg-lighten-hover {
         transition: background-color 200ms ease;
     }
+    .bg-lighten-hover:hover {
+        background-color: #FDF1EB;
+    }
+
     .series-menu-item:not(:last-child) {
-        border-bottom: 2px solid #ECECEC;
+        border-bottom: 2px solid #E7E7E7;
     }
     .series-menu-item {
         display: flex;
@@ -241,6 +216,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         background: inherit;
         height: 35px;
         position: relative;
+    }
+    .series-menu-item a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 1;
+        font-size: 15px;
+        font-weight: 500;
+        padding-left: 19px;
+        text-decoration: none;
+        transition: padding-left 100ms ease;
+    }
+    .series-menu-item.active a, .series-menu-item:hover a {
+        padding-left: 30px;
     }
     /* li mobile */
     .series-menu-item.mobile {
@@ -250,13 +239,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     .series-menu.collapsed {
         display: none;
     }
-    .list-unstyled {
-        margin: 0;
-    }
-    .list-unstyled {
-        padding-left: 0;
-        list-style: none;
-    }
+
 
 
     /* 2/2 div do BODY */
@@ -272,23 +255,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 .px-xlg {
     padding: 0 36px;
+    background: #FDF1EB;
 }
 /*first div  flex-col*/
-    .expand {
-        flex: 1;
-    }
     /*h1*/
     .header .series-title {
         flex: 3;
-        font-family: "Quicksand",sans-serif;
-        font-size: 17px;
-        font-weight: bold;
+        font-family: 'Roboto', "Quicksand",sans-serif;
+        font-size: 22px;
+        font-weight: 400;
         margin: 0;
+        line-height: 26px;
+        font-style: normal;
+        width: 643px;
+        height: 26px;
+        left: 36px;
+        top: 23px;
+        color: #725C5C;
     }
         /*span*/    
         .header .series-title span {
-            font-size: 12px;
-            font-weight: normal;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            color: #725C5C;
+            line-height: 16px;
         }
     /*div flex-row*/
     .flex-row {
@@ -306,6 +297,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     .mr-sm {
         margin: 0 14px 0 0;
     }
+        .series-issn {
+            font-size: 14px;
+            line-height: 16px;
+            color: #725C5C;
+        }
 
 /*second div  languages-dropdown*/
 .languages-dropdown {
@@ -315,6 +311,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     .languages-dropdown .btn {
         background-color: transparent;
     }
+    .dropdown-toggle:focus {
+        outline: 0;
+    }
     .btn-sm, .btn-group-sm > .btn {
         padding: 5px 10px;
         font-size: 12px;
@@ -323,7 +322,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     }
     .btn-default {
         color: #333;
+        background-color: #fff;
         border-color: #ccc;
+    }
+    .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
+    .btn:hover, .btn:focus, .btn.focus {
+        color: #333;
+        text-decoration: none;
+    }
+    .btn-default:focus, .btn-default.focus {
+        color: #333;
+        background-color: #e6e5e5;
+        border-color: #8c8c8c;
+    }
+    .btn-default:hover {
+        color: #333;
+        background-color: #e6e5e5;
+        border-color: #adadad;
     }
     .btn {
         display: inline-block;
@@ -347,9 +365,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     }
     input, button, select, textarea {
         font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
     }
     button, html input[type="button"], input[type="reset"], input[type="submit"] {
         -webkit-appearance: button;
+        cursor: pointer;
     }
     button, select {
         text-transform: none;
@@ -358,14 +379,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         overflow: visible;
     }
     button, input, optgroup, select, textarea {
+        color: inherit;
         font: inherit;
         margin: 0;
     }
+
+    .fa-globe:before {
+        content: "\f0ac";
+    }
+    
+    
     /*i  class:fa*/
         .fa, .fas {
             font-family: "Font Awesome 5 Pro";
             font-weight: 900;
+            background: url(/images/language-image.svg);
         }
+    
         /*span*/
         .btn .caret {
             margin-left: 0;
@@ -383,15 +413,52 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
             border-left: 4px solid transparent;
         }
 
-/* third div  user-menu-wrapper*  AINDA FALTA ARRUMAR A PARTE DE LOGIN*/
-@media (min-width: 768px){
-    .user-menu-wrapper {
-        width: 80px;
-    }
-}
-.user-menu-wrapper {
-    line-height: 15px;
-}
+        /*ul  ckass: languages*/
+        .palette-tropical-flavours ul.dropdown-menu {
+            color: #ED7839;
+        }
+        ul.dropdown-menu.dropdown-menu-right {
+            top: 35px;
+        }
+        .dropdown-menu.languages {
+            left: unset;
+            right: 0;
+        }
+        ul.dropdown-menu {
+            border-top: 2px solid currentColor;
+            font-weight: 600;
+            margin-top: 9px;
+            min-width: 120px;
+            top: 30px;
+        }
+        .dropdown-menu-right {
+            left: auto;
+            right: 0;
+        }
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            display: none;
+            float: left;
+            min-width: 160px;
+            padding: 5px 0;
+            margin: 2px 0 0;
+            list-style: none;
+            font-size: 14px;
+            text-align: left;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border: 1px solid rgba(0,0,0,0.15);
+            border-radius: 4px;
+            -webkit-box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+            box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+            background-clip: padding-box;
+        }
+
+/* third div*/
+
 
 /* MAIN */
 .main {
@@ -418,7 +485,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         margin: 0 0 14px;
     }
     /*h2*/
-    .palette-tropical-flavours .f-primary {
+    .f-primary {
         color: #ED7839;
     }
     .proceedings-paper-full .paper-title {
@@ -456,9 +523,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
             margin-left: 5px;
         }
 
-        .palette-tropical-flavours .bg-primary, .palette-tropical-flavours .btn-primary, .palette-tropical-flavours .prefix, .palette-tropical-flavours .modal .modal-content .modal-header, .modal .modal-content .palette-tropical-flavours .modal-header, .palette-tropical-flavours .actions-wrapper .region-paper-actions-major .block .btn-lg, .actions-wrapper .region-paper-actions-major .block .palette-tropical-flavours .btn-lg, .palette-tropical-flavours .actions-wrapper .region-paper-actions-major .block .btn-group-lg > .btn, .actions-wrapper .region-paper-actions-major .block .palette-tropical-flavours .btn-group-lg > .btn, .palette-tropical-flavours .actions-wrapper .region-paper-actions-minor .block .btn, .actions-wrapper .region-paper-actions-minor .block .palette-tropical-flavours .btn, .palette-tropical-flavours .pagination > .active > a, .palette-tropical-flavours .pagination > .active > span, .palette-tropical-flavours .m-gaussTabs__item--active .badge, .m-gaussTabs__item--active .palette-tropical-flavours .badge {
+        .bg-primary, .btn-primary, .prefix, .modal .modal-content .modal-header, .modal .modal-content .modal-header, .actions-wrapper .region-paper-actions-major .block .btn-lg, .actions-wrapper .region-paper-actions-major .block .btn-lg, .actions-wrapper .region-paper-actions-major .block .btn-group-lg > .btn, .actions-wrapper .region-paper-actions-major .block .btn-group-lg > .btn, .actions-wrapper .region-paper-actions-minor .block .btn, .actions-wrapper .region-paper-actions-minor .block .btn, .pagination > .active > a, .pagination > .active > span, .m-gaussTabs__item--active .badge, .m-gaussTabs__item--active .badge {
             background-color: #ED7839;
         }
+
+        .bd-gradient-left::before, .coauthors-container .coauthors li::before, .coauthors-container .coauthors li::before, .bg-active.active::before {
+            background: #ED7839;
+            background: linear-gradient(180deg,#ED7839 100%,#FFB455 0%);
+            content: '';
+            display: block;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 5px;
+        }
+
         .actions-wrapper .region-paper-actions-major .block .btn-lg, .actions-wrapper .region-paper-actions-major .block .btn-group-lg > .btn {
             border: 0;
             border-radius: 4px;
@@ -466,10 +546,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
             font-size: 16px;
             padding: 5px 16px;
         }
-        .palette-tropical-flavours .box-shadow-black, .palette-tropical-flavours .btn-primary {
+        .box-shadow-black, .btn-primary {
             box-shadow: 0 2px 5px rgb(0 0 0 / 25%);
         }
-        .palette-tropical-flavours .bd-primary, .palette-tropical-flavours .btn-primary, .palette-tropical-flavours .pagination > .active > a, .palette-tropical-flavours .pagination > .active > span {
+        .bd-primary, .btn-primary, .pagination > .active > a, .pagination > .active > span {
             border: 1px solid #ED7839;
         }
         .btn-block {
@@ -686,12 +766,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
                             display: block;
                             padding: 10px 15px;
                         }
-                        a {
-                            color: inherit;
-                        }
-                        a {
-                            text-decoration: none;
-                        }
+                        
                         /*li*/
                         .modal .nav-tabs li {
                             display: flex;
@@ -816,8 +891,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         }
         h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
             font-family: "Roboto",sans-serif;
-            font-weight: 500;
-            line-height: 1.1;
+            font-weight: 700;
+            line-height: 35px;
             color: inherit;
         }
             .actions-wrapper .modal-trigger {
@@ -844,9 +919,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
                 .col-md-9 {
                     width: 75%;
                 }
-            }
-            .palette-tropical-flavours .bg-lighten, .palette-tropical-flavours .authors-list-container .author-card::before, .authors-list-container .palette-tropical-flavours .author-card::before, .palette-tropical-flavours #authors-container .author-card::before, #authors-container .palette-tropical-flavours .author-card::before, .palette-tropical-flavours .panel-heading, .palette-tropical-flavours .bg-active.active, .palette-tropical-flavours .m-gaussTabs__item--active {
-                background-color: #FDF1EB;
             }
             
             .panel-dewey .panel-heading {
@@ -936,6 +1008,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         margin: 0 auto;
         padding: calc(10px / 2);
         width: 200px;
+    }
+    .footer::before {
+        background-color: #E7E7E7;
+        content: '';
+        display: block;
+        height: 1px;
+        position: absolute;
+        top: 0;
+        width: calc(100% - 72px);
     }
 
 .footer .description {

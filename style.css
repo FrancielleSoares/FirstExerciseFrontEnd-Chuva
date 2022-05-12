@@ -162,6 +162,35 @@ a {
                     .title-wrapper .btn-link {
                         color: #FFF;
                     }
+                    /* divs  with login*/
+                    .user-menu-wrapper {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .display-first {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                    }
+                        .welcome-display {
+                            display: flex;
+                        }
+                        .gmail-display {
+                            display: flex;
+                            font-family: 'Quicksand';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #333333;
+                        }
+                        p.welcome-display, p.gmail-display {
+                            margin: 0px 14px 0px;
+                        }
+                    .display-second {
+                        display: flex;
+                        align-items: center;
+                    }
 /******* inside the div sidebar-body, inside the div sidebar */
 /* div */
 .series-logo {
@@ -374,10 +403,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         border-color: #ccc;
     }
     .btn-sm, .btn-group-sm > .btn {
-        padding: 5px 10px;
+        padding: 3px 8px;
         font-size: 14px;
         line-height: 1.5;
         border-radius: 3px;
+        display: flex;
+        align-items: center;
     }
     .languages-dropdown .btn {
         background-color: transparent;
@@ -387,13 +418,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     /*i  class:fa*/
         .fa.fa-globe {
             width: 22px;
-            height: 19px;
+            height: 25px;
             background: url(/images/language-image.svg);
         }
     
         /*span*/
         .btn .caret {
-            margin-left: 0;
+            margin-left: 3px;
         }
         
         .caret {

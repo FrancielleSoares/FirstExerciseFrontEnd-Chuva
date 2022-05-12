@@ -98,7 +98,9 @@ a {
             width: 100%;
         }
         }
-
+    /*img.imagem-vídeo {
+        
+    }*/
     /*h2*/
     .title-wrapper .acronym {
         display: flex;
@@ -162,9 +164,6 @@ a {
                     }
 /******* inside the div sidebar-body, inside the div sidebar */
 /* div */
-.bg-lighten, .authors-list-container .author-card::before, .authors-list-container .author-card::before, #authors-container .author-card::before, #authors-container .author-card::before, .panel-heading, .bg-active.active, .m-gaussTabs__item--active {
-    background-color: #FDF1EB;
-}
 .series-logo {
     display: flex;
     flex-direction: row;
@@ -308,22 +307,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     position: relative;
 }
 /*button*/
-    .languages-dropdown .btn {
-        background-color: transparent;
-    }
     .dropdown-toggle:focus {
         outline: 0;
-    }
-    .btn-sm, .btn-group-sm > .btn {
-        padding: 5px 10px;
-        font-size: 12px;
-        line-height: 1.5;
-        border-radius: 3px;
-    }
-    .btn-default {
-        color: #333;
-        background-color: #fff;
-        border-color: #ccc;
     }
     .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
         outline: 5px auto -webkit-focus-ring-color;
@@ -342,26 +327,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         color: #333;
         background-color: #e6e5e5;
         border-color: #adadad;
-    }
-    .btn {
-        display: inline-block;
-        margin-bottom: 0;
-        font-weight: normal;
-        text-align: center;
-        vertical-align: middle;
-        touch-action: manipulation;
-        cursor: pointer;
-        background-image: none;
-        border: 1px solid transparent;
-        white-space: nowrap;
-        padding: 6px 12px;
-        font-size: 14px;
-        line-height: 1.428571429;
-        border-radius: 4px;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
     }
     input, button, select, textarea {
         font-family: inherit;
@@ -383,16 +348,46 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         font: inherit;
         margin: 0;
     }
-
-    .fa-globe:before {
-        content: "\f0ac";
+    .btn {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: normal;
+        text-align: center;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.428571429;
+        border-radius: 4px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .btn-default {
+        color: #333;
+        background-color: #fff;
+        border-color: #ccc;
+    }
+    .btn-sm, .btn-group-sm > .btn {
+        padding: 5px 10px;
+        font-size: 14px;
+        line-height: 1.5;
+        border-radius: 3px;
+    }
+    .languages-dropdown .btn {
+        background-color: transparent;
     }
     
     
     /*i  class:fa*/
-        .fa, .fas {
-            font-family: "Font Awesome 5 Pro";
-            font-weight: 900;
+        .fa.fa-globe {
+            width: 22px;
+            height: 19px;
             background: url(/images/language-image.svg);
         }
     
@@ -414,7 +409,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         }
 
         /*ul  ckass: languages*/
-        .palette-tropical-flavours ul.dropdown-menu {
+        ul.dropdown-menu {
             color: #ED7839;
         }
         ul.dropdown-menu.dropdown-menu-right {
@@ -456,6 +451,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
             box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
             background-clip: padding-box;
         }
+        .dropdown-menu > li > a {
+            display: block;
+            padding: 3px 20px;
+            clear: both;
+            font-weight: normal;
+            line-height: 1.428571429;
+            color: #333333;
+            white-space: nowrap;
+        }
 
 /* third div*/
 
@@ -490,9 +494,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     }
     .proceedings-paper-full .paper-title {
         font-size: 20px;
-        font-weight: 800;
-        letter-spacing: 1.6px;
-        line-height: 1.2em;
+        font-weight: 900;
+        letter-spacing: 0.05em;
+        line-height: 25px;
     }
     .mt-none, .my-none, .m-none {
         margin-top: 0;
@@ -501,6 +505,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         margin-bottom: 0;
     }
 
+    /*panel-body  ul's  li's*/
+    .presentation-type {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+        letter-spacing: 2%;
+        color: #5C5C5C;
+    }
+    strong{
+        font-weight: bold;
+    }
+
+    .authors {
+        font-size: 14px;
+        line-height: 120%;
+        letter-spacing: 2%;
+        color: #5C5C5C;
+    }
+
+    .universities {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+        letter-spacing: 2%;
+        color: #ada0a0;
+    }
+    .numbers-color {
+        color: #ada0a0;
+    }
+    
 /* div   ...col-md-4*/
 @media (min-width: 992px){
     .col-md-4 {
@@ -657,26 +693,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
                         opacity: 0.2;
                         filter: alpha(opacity=20);
                     }
-                    input, button, select, textarea {
-                        font-family: inherit;
-                        font-size: inherit;
-                        line-height: inherit;
-                    }
                     button, html input[type="button"], input[type="reset"], input[type="submit"] {
                         -webkit-appearance: button;
                         cursor: pointer;
                     }
-                    button, select {
-                        text-transform: none;
-                    }
-                    button {
-                        overflow: visible;
-                    }
-                    button, input, optgroup, select, textarea {
-                        color: inherit;
-                        font: inherit;
-                        margin: 0;
-                    }
+            
                     /*h4*/
                     .modal-title {
                         margin: 0;
@@ -868,7 +889,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
             .fal, .far {
                 font-family: "Font Awesome 5 Pro";
             }
-            .fa, .fab, .fad, .fal, .far, .fas {
+            .fa, .fab, .fad, .fal, .far {
                 -moz-osx-font-smoothing: grayscale;
                 -webkit-font-smoothing: antialiased;
                 display: inline-block;
@@ -921,29 +942,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
                 }
             }
             
-            .panel-dewey .panel-heading {
-                border-color: #ECECEC;
-                font-size: 16px;
-                font-weight: bold;
-            }
             .panel-heading {
                 padding: 10px 15px;
                 border-bottom: 1px solid transparent;
                 border-top-right-radius: 3px;
                 border-top-left-radius: 3px;
             }
+            .panel-dewey .panel-heading {
+                border-color: #ECECEC;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .bg-lighten, .authors-list-container .author-card::before, .authors-list-container .author-card::before, #authors-container .author-card::before, #authors-container .author-card::before, .panel-heading, .bg-active.active, .m-gaussTabs__item--active {
+                background-color: #FDF1EB;
+            }
                 .panel-dewey .panel-body.text {
                     font-weight: 500;
                 }
                 .panel-dewey .panel-body {
                     border-color: #ECECEC;
-                }
-                .panel-body {
-                    font-size: 15px;
-                    line-height: 1.5em;
-                }
-                .panel-body {
-                    padding: 15px;
                 }
                     .panel-body .field {
                         font-size: 15px;
@@ -964,19 +981,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
                 border-color: #ECECEC;
             }
 
-            .panel-dewey .panel-heading {
-                border-color: #ECECEC;
-                font-size: 16px;
-                font-weight: bold;
-            }
-            .panel-heading {
-                padding: 10px 15px;
-                border-bottom: 1px solid transparent;
-                border-top-right-radius: 3px;
-                border-top-left-radius: 3px;
-            }
-
-
 /* FOOTER */
 .footer {
     display: flex;
@@ -993,7 +997,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: 15px;
 }
 
-    /*img*/ 
+    /*img  footer*/ 
     .footer .logo .galoa-logo {
     width: 200px;
     }
@@ -1026,3 +1030,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: 15px;
 }
 
+
+.f-primary, .letters-container .nav-letters .letter.active, .letters-container .nav-letters .letter.active, .menu-widget.ais-menu--header, .menu-widget .ais-refinement-list--item::before, .menu-widget .ais-refinement-list--item::before, .menu-widget .ais-menu--item::before, .menu-widget .ais-menu--item::before, .refinement .ais-refinement-list--item::before, .refinement .ais-refinement-list--item::before, .refinement .ais-menu--item::before, .refinement .ais-menu--item::before, .refinement-title, .series-menu-item.sub-item .active, .series-menu-item.sub-item .active, .modal .citation-text .copy-citation, .modal .citation-text .copy-citation, .modal .citation-text .citation .citation-paper-link a, .modal .citation-text .citation .citation-paper-link a, .stats .metric-container .metric-value, .stats .metric-container .metric-value, .actions-wrapper .modal-trigger, .actions-wrapper .modal-trigger, .panel-dewey .panel-body.text.list-unstyled, .panel-dewey .panel-body.text.list-unstyled, .panel-dewey .panel-body.text .list-unstyled, .panel-dewey .panel-body.text .list-unstyled, .panel-body .field ul li, .panel-body .field ul li, .palette-dancing-flames .theme-list li, .palette-sweet-dream .theme-list li, .palette-fantasy .theme-list li, .palette-to-the-ocean .theme-list li, .palette-clear-sky .theme-list li, .palette-wisdom .theme-list li, .palette-priceless-lake .theme-list li, .palette-magnificent-forest .theme-list li, .palette-lost-woods .theme-list li, .theme-list li, .palette-mysterious-cave .theme-list li, .palette-glorious .theme-list li, .palette-sunrise .theme-list li, .card .card-body .card-body-title, .card .card-body .card-body-title, .topic-info-container .recommended-paper a, .topic-info-container .recommended-paper a, label, .ops-topic-card .ops-topic-subject, .ops-topic-card .ops-topic-subject, .ops-topic-card .ops-topic-author.editing-topic, .ops-topic-card .ops-topic-author.editing-topic, .ops-topic-card .action-collapse, .ops-topic-card .action-collapse, .m-gaussTabs__item.pending, .initial-letters div a:hover, .initial-letters div a:hover, .pagination li a, .pagination li a, .institutions-list h4, .institutions-list h4, .institutions-list div a:hover, .institutions-list div a:hover {
+    color: #ED7839;
+}

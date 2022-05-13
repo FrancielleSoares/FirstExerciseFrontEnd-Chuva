@@ -83,9 +83,6 @@ a {
         display: flex;
         flex-direction: column;
     }
-    .col-xs-8 {
-        width: 66.6666666667%;
-    }
 
         /*MEDIAS*/
         @media (min-width: 768px){
@@ -98,11 +95,11 @@ a {
             width: 100%;
         }
         }
-
-    .imagem-vídeo {
-        position: relative;
-        width: 100%;
-    }
+        
+        .image-video {
+            position: relative;
+            max-width: 90%;
+        }
 
     /*h2*/
     .title-wrapper .acronym {
@@ -298,10 +295,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 80px;
+    height: 100%;
 }
 .px-xlg {
-    padding: 0 36px;
+    padding: 0px 15px 4px 15px;
     background: #FDF1EB;
 }
 /*first div  flex-col*/
@@ -314,7 +311,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         margin: 0;
         line-height: 26px;
         font-style: normal;
-        width: 643px;
+        min-width: 400px;
         height: 26px;
         left: 36px;
         top: 23px;
@@ -351,9 +348,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         }
 
 /*second div  languages-dropdown*/
+.div-box {
+    display: flex;
+    flex-wrap: wrap;
+}
 .languages-dropdown {
     position: relative;
 }
+
 /*button*/
     .dropdown-toggle:focus {
         outline: 0;
@@ -524,7 +526,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: -15px;
     margin-right: -15px;
 }
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
     @media (min-width: 992px){
+        .px-xlg {
+            padding: 0px 36px 4px 36px;
+        }
+
         .col-md-8 {
             width: 66.6666666667%;
         }
@@ -979,10 +989,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         display: none;
     }
         /*div*/
-        .row {
-            margin-left: -15px;
-            margin-right: -15px;
-        }
         .mb-md {
             margin: 0 0 26px;
         }
@@ -1021,6 +1027,102 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
                             margin: 0 0 10px;
                         }
             
+
+                        /* Divs e classes: do tema 'Discussões' */
+                        .padding-first-class {
+                            padding: 15px;
+                        }
+                        .flex-discussoes {
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: nowrap;
+                            flex-direction: column;
+                            border-bottom: 1px solid #E7E7E7;
+                        }
+                        .p-1{
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: #ED7839;
+                        }
+                        .svgs {
+                            margin: 20px;
+                        }
+                        .p-2 {
+                            font-family: 'Quicksand';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 19px;
+                            text-align: center;
+                            color: #595959;
+                            margin-bottom: 30px;
+                            margin-top: 12px;
+                        }
+
+
+                        /* Classes das divs: 'Assunto da pergunta...' */
+                        .panel-1 {
+                            background-color: #fff;
+                            border: 1px solid transparent;
+                            border-radius: 4px;
+                            -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+                            box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+                        }
+                        .box-assunto {
+                            background: #FFFFFF;
+                            border: 1px solid #E7E7E7;
+                            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+                            border-radius: 4px;
+                            padding: 20px;
+                            margin: 15px 15px 0 15px;
+                        }
+                        .box-margin-bottom {
+                            margin-bottom: 15px;
+                        }
+                        .p-3 {
+                            font-family: 'Quicksand';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #ED7839;
+                        }
+                        .p-4 {
+                            font-family: 'Quicksand';
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #5c5c5c;
+                        }
+                        .p-5 {
+                            font-family: 'Quicksand';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #4D4D4D;
+                        }
+
+                        .interagir {
+                            display: flex;
+                        }
+                        .svg {
+                            margin-right: 15px;
+                        }
+                        .p-6 {
+                            font-family: 'Quicksand';
+                            font-style: normal;
+                            font-weight: 350;
+                            font-size: 14px;
+                            line-height: 19px;
+                            color: #757575;
+                            margin: 3px 0px 0px 15px;
+                        }
+                    
             /*div*/
             @media (min-width: 992px){
                 .col-md-3 {
@@ -1084,4 +1186,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .f-primary, .letters-container .nav-letters .letter.active, .letters-container .nav-letters .letter.active, .menu-widget.ais-menu--header, .menu-widget .ais-refinement-list--item::before, .menu-widget .ais-refinement-list--item::before, .menu-widget .ais-menu--item::before, .menu-widget .ais-menu--item::before, .refinement .ais-refinement-list--item::before, .refinement .ais-refinement-list--item::before, .refinement .ais-menu--item::before, .refinement .ais-menu--item::before, .refinement-title, .series-menu-item.sub-item .active, .series-menu-item.sub-item .active, .modal .citation-text .copy-citation, .modal .citation-text .copy-citation, .modal .citation-text .citation .citation-paper-link a, .modal .citation-text .citation .citation-paper-link a, .stats .metric-container .metric-value, .stats .metric-container .metric-value, .actions-wrapper .modal-trigger, .actions-wrapper .modal-trigger, .panel-dewey .panel-body.text.list-unstyled, .panel-dewey .panel-body.text.list-unstyled, .panel-dewey .panel-body.text .list-unstyled, .panel-dewey .panel-body.text .list-unstyled, .panel-body .field ul li, .panel-body .field ul li, .palette-dancing-flames .theme-list li, .palette-sweet-dream .theme-list li, .palette-fantasy .theme-list li, .palette-to-the-ocean .theme-list li, .palette-clear-sky .theme-list li, .palette-wisdom .theme-list li, .palette-priceless-lake .theme-list li, .palette-magnificent-forest .theme-list li, .palette-lost-woods .theme-list li, .theme-list li, .palette-mysterious-cave .theme-list li, .palette-glorious .theme-list li, .palette-sunrise .theme-list li, .card .card-body .card-body-title, .card .card-body .card-body-title, .topic-info-container .recommended-paper a, .topic-info-container .recommended-paper a, label, .ops-topic-card .ops-topic-subject, .ops-topic-card .ops-topic-subject, .ops-topic-card .ops-topic-author.editing-topic, .ops-topic-card .ops-topic-author.editing-topic, .ops-topic-card .action-collapse, .ops-topic-card .action-collapse, .m-gaussTabs__item.pending, .initial-letters div a:hover, .initial-letters div a:hover, .pagination li a, .pagination li a, .institutions-list h4, .institutions-list h4, .institutions-list div a:hover, .institutions-list div a:hover {
     color: #ED7839;
+}
+
+@media (max-width: 991px){
+    .header {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 840px){
+    .dialog-off-canvas-main-canvas {
+        display: block;
+    }    
+    .sidebar{
+        position: fixed;
+        left: -220px;
+        transition: 0.3s ease;
+    }
+    .button-active {
+        left: 0;
+    }
 }

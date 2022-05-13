@@ -10,12 +10,19 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@400;700&display=swap"rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     </head>
 
     <body>    
         <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
-            <span id="modal" class="" onclick="menuOnClick()"></span>
+            <span id="modal-menu" class="" onclick="menuOnClick()"></span>
+            <div id="menu-bar" onclick="menuOnClick()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+            </div>
+
             <div id="sidebar" class="sidebar" role="sidebar">
                     <div class="bg-gradient px-lg title-wrapper" role="title">
                         <span class="col-xs-2 visible-xs" data-toggle="menu" data-target="#main-menu">
@@ -135,7 +142,7 @@
                         <div class="col-sm-12 col-md-8 col-lg-8 proceedings-paper-full mb-sm">
                             <div class="region region-title-area">
                                 <section id="block-papertitleblock-dewey" class="block block-proceedings-paper block-title-block clearfix">
-                                    <h2 class="f-primary my-none paper-title"> Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h2>
+                                    <h2 class="f-primary my-none paper-title"> Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </h2>
                                 </section>
                             </div>
                         </div>
@@ -144,7 +151,8 @@
                             <div class="actions-button">
                                 <div class="region region-paper-actions-major">
                                     <section id="block-buttondownloadblock-dewey" class="block block-proceedings-callforpapers-download block-button-download-block clearfix">
-                                        <a href="/proceedings/100121/_papers/113386/download/abstract_file1" class="btn btn-lg btn-primary btn-block download-button">
+                                        <a href="#" class="btn btn-lg btn-primary btn-block download-button">
+                                            <img src="images/download.svg" alt="">
                                             <i class="fa fa-download"></i>
                                             Download
                                         </a>
@@ -152,88 +160,21 @@
                                 </div>
                                 <div class="region region-paper-actions-minor">
                                     <section id="block-citationbuttonmodalblock-dewey" class="block block-proceedings-citation block-citation-button-modal clearfix">
-                                        <div class="modal fade" id="citations" aria-labelledby="citations--title" tabindex="-1" role="dialog">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                        <h4 id="citations--title" class="modal-title">Como citar esse trabalho?</h4>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <p>Para citar este trabalho <strong>use</strong> um dos padrões abaixo: </p>
-                                                        <div id="citation">
-                                                            <ul class="nav nav-tabs">
-                                                                <li class="active"><a href="#abnt" data-toggle="tab">ABNT</a></li>
-                                                                <li><a href="#iso" data-toggle="tab">ISO</a></li>
-                                                                <li><a href="#apa" data-toggle="tab">APA</a></li>
-                                                                <li><a href="#vancouver" data-toggle="tab">Vancouver</a></li>
-                                                            </ul>
-                                                            <div class="tab-content">
-                                                                <div class="tab-pane active" id="abnt">
-                                                                    <div class="citation-text panel panel-default" id="citation-citation-abnt">
-                                                                        <div class="panel-body">
-                                                                            <div id="citation-paper-113386" class="citation citation-abnt">
-                                                                                <span class="citation-authors">Rosana Bueno et al.</span>
-                                                                                <span class="citation-paper-title"> Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP.</span>
-                                                                                <span class="citation-proceedings">In: ANAIS DO 13º SIMPóSIO LATINO AMERICANO DE CIêNCIA DE ALIMENTOS, 2019, Campinas.</span>
-                                                                                <span class="citation-digital-proceedings"><strong>Anais eletrônicos...</strong> Campinas, Galoá, 2019.</span>
-                                                                                <span class="citation-paper-link">Disponível em: &lt;<a href="https://proceedings.science/slaca/slaca-2019/papers/-analise-sensorial-de-preparacoes-funcionais-desenvolvidas-para-escolares-entre-09-e-15-anos--do-municipio-de-campinas-s" hreflang="pt-br">https://proceedings.science/slaca/slaca-2019/papers/-analise-sensorial-de-preparacoes-funcionais-desenvolvidas-para-escolares-entre-09-e-15-anos--do-municipio-de-campinas-s</a>&gt;. Acesso em: 05 Maio. 2022.</span>
-                                                                                <a class="copy-citation clip" data-original-title="Clique para copiar" data-toggle="tooltip" data-placement="top" data-clipboard-text="Rosana Bueno et al.  Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP. In: ANAIS DO 13º SIMPóSIO LATINO AMERICANO DE CIêNCIA DE ALIMENTOS, 2019, Campinas. Anais eletrônicos... Campinas, Galoá, 2019. Disponível em: &lt;https://proceedings.science/slaca/slaca-2019/papers/-analise-sensorial-de-preparacoes-funcionais-desenvolvidas-para-escolares-entre-09-e-15-anos--do-municipio-de-campinas-s&gt; Acesso em: 05 Maio. 2022.">Copiar citação</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="tab-pane" id="iso">
-                                                                    <div class="citation-text panel panel-default" id="citation-citation-iso">
-                                                                        <div class="panel-body">
-                                                                            <div id="citation-paper-113386" class="citation citation-iso">
-                                                                                <span class="citation-authors">Rosana Bueno,</span>
-                                                                                <span class="citation-paper-title">2019,  Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP.</span>
-                                                                                <span class="citation-proceedings">Em: Anais do 13º Simpósio Latino Americano de Ciência de Alimentos. </span>
-                                                                                <span class="citation-digital-proceedings">Campinas : Galoá. 2019.</span>
-                                                                                <span class="citation-paper-link">Disponível em: &lt;<a href="https://proceedings.science/slaca/slaca-2019/papers/-analise-sensorial-de-preparacoes-funcionais-desenvolvidas-para-escolares-entre-09-e-15-anos--do-municipio-de-campinas-s" hreflang="pt-br">https://proceedings.science/slaca/slaca-2019/papers/-analise-sensorial-de-preparacoes-funcionais-desenvolvidas-para-escolares-entre-09-e-15-anos--do-municipio-de-campinas-s</a>&gt;.</span>
-                                                                                <a class="copy-citation clip" data-original-title="Clique para copiar" data-toggle="tooltip" data-placement="top" data-clipboard-text="Rosana Bueno, 2019,  Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP. Em: Anais do 13º Simpósio Latino Americano de Ciência de Alimentos.  Campinas : Galoá. 2019. Disponível em: . Acessado: 05 Maio. 2022.">Copiar citação</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="tab-pane" id="apa">
-                                                                    <div class="citation-text panel panel-default" id="citation-citation-apa">
-                                                                        <div class="panel-body">
-                                                                            <div id="citation-paper-113386" class="citation citation-apa">
-                                                                                <span class="citation-authors">Rosana Bueno.</span>
-                                                                                <span class="citation-paper-title">(2019, December).  Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP.</span>
-                                                                                <span class="citation-proceedings">Trabalho apresentado em Anais do 13º Simpósio Latino Americano de Ciência de Alimentos.</span>
-                                                                                <a class="copy-citation clip" data-original-title="Clique para copiar" data-toggle="tooltip" data-placement="top" data-clipboard-text="Rosana Bueno. (2019, December).  Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP. Trabalho apresentado em Anais do 13º Simpósio Latino Americano de Ciência de Alimentos.">Copiar citação</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="tab-pane" id="vancouver">
-                                                                    <div class="citation-text panel panel-default" id="citation-citation-vancouver">
-                                                                        <div class="panel-body">
-                                                                            <div id="citation-paper-113386" class="citation citation-vancouver">
-                                                                                <span class="citation-authors">Rosana Bueno,</span>
-                                                                                <span class="citation-paper-title"> Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP.</span>
-                                                                                <span class="citation-proceedings">Em: Anais do 13º Simpósio Latino Americano de Ciência de Alimentos; Campinas.São Paulo.Brasil.</span>
-                                                                                <span class="citation-digital-proceedings">Campinas : Galoá; 2019.</span>
-                                                                                <span class="citation-paper-link">Disponível em: <a href="https://proceedings.science/slaca/slaca-2019/papers/-analise-sensorial-de-preparacoes-funcionais-desenvolvidas-para-escolares-entre-09-e-15-anos--do-municipio-de-campinas-s" hreflang="pt-br">https://proceedings.science/slaca/slaca-2019/papers/-analise-sensorial-de-preparacoes-funcionais-desenvolvidas-para-escolares-entre-09-e-15-anos--do-municipio-de-campinas-s</a></span>
-                                                                                <a class="copy-citation clip" data-original-title="Clique para copiar" data-toggle="tooltip" data-placement="top" data-clipboard-text="Rosana Bueno,  Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP. Em: Anais do 13º Simpósio Latino Americano de Ciência de Alimentos; Campinas.São Paulo.Brasil. Campinas : Galoá; 2019. Disponível em: https://proceedings.science/slaca/slaca-2019/papers/-analise-sensorial-de-preparacoes-funcionais-desenvolvidas-para-escolares-entre-09-e-15-anos--do-municipio-de-campinas-s">Copiar citação</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
+                                        
                                     <section id="block-favoritebuttonblock-dewey" class="block block-proceedings-favorite block-favorite-button clearfix">
-                                        <a class="favorite btn btn-primary" data-toggle="tooltip" data-placement="top" href="/user/login/ashnazg?destination=/proceedings/100121/_papers/113386/favorite" title="Favoritar este trabalho"> 
+                                        <a class="favorite btn btn-primary" data-toggle="tooltip" data-placement="top" href="#" title="Favoritar este trabalho"> 
+                                            <img src="images/favoritar.svg" alt="">
+                                        <span class="sr-only">Favoritar este trabalho</span> 
+                                        <i class="far fa-star"></i> 
+                                        </a>
+                                    </section>
+                                </div>
+                                <div class="region region-paper-actions-minor">
+                                    <section id="block-citationbuttonmodalblock-dewey" class="block block-proceedings-citation block-citation-button-modal clearfix">
+                                        
+                                    <section id="block-favoritebuttonblock-dewey" class="block block-proceedings-favorite block-favorite-button clearfix">
+                                        <a class="favorite btn btn-primary" data-toggle="tooltip" data-placement="top" href="#" title="Favoritar este trabalho"> 
+                                            <img src="images/doi.svg" alt="">
                                         <span class="sr-only">Favoritar este trabalho</span> 
                                         <i class="far fa-star"></i> 
                                         </a>
@@ -250,14 +191,59 @@
                         <div data-drupal-messages-fallback class="hidden"></div>
                         <div class="row mb-md">
                             <div class="col-sm-12 col-md-9">
-                                <div class="image-video-div">
-                                    <img class="image-video" src="images/image-video.png" alt="">
+                                <div class="flex">
+                                    <div class="image-video-div">
+                                        <img class="image-video" src="images/image-video.png" alt="">
+                                    </div>
+                                    <div class="col-sm-12 col-md-3">
+                                        <div class="panel panel-dewey">
+                                            <div class="panel-heading"> Detalhes </div>
+                                            <div class="panel-body text list-unstyled list-with-separators">
+                                                <div class="form-group">
+                                                    <ul class="list list-unstyled">
+                                                        <li class="presentation-type">
+                                                            Tipo de Apresentação: <strong>Pôster</strong><br>
+                                                            Eixo temático: <strong>Alimentação e saúde (AS)</strong><br>
+                                                            Palavras-chaves: <strong>Alimentos funcionais, alimentação escolar.</strong>
+                                                            <br><br>
+                                                        </li>
+                                                        <li class="authors">
+                                                            <strong>Autores:</strong>
+                                                            <br>
+                                                            Galileo Galilei<span class="numbers-color">¹</span>
+                                                            <br>
+                                                            Berta Lange de Morretes<span class="numbers-color">²</span>
+                                                            <br>
+                                                            Isaac Newton<span class="numbers-color">³</span>
+                                                            <br>
+                                                            Cesar Lattes<span class="numbers-color">¹</span>
+                                                            <br> 
+                                                            Stephen Hawking<span class="numbers-color">⁴</span>
+                                                        </li>
+                                                        <li class="universities"><br>
+                                                            <br>
+                                                        
+                                                            ¹Universidade Estadual de Campinas
+                                                            <br>
+                                                            ²Universidade de São Paulo
+                                                            <br>
+                                                            ³Instituto Nacional de Pesquisas Espaciais
+                                                            <br>
+                                                            ⁴Universidade Federal do Rio de Janeiro
+                                                            <br>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                    
                                 <div class="panel panel-dewey">
                                     <div class="panel-heading"> Resumo </div>
                                     <div class="panel-body text">
                                         <div class="field field--name-abstract field--type-text-long field--label-hiddenfield--item">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... ver mais</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... <strong> ver mais</strong></p>
                                         </div>
                                     </div>
                                 </div>
@@ -273,78 +259,47 @@
                                                 <img class="svgs" src="images/icone3.svg" alt="">
                                             </div>
                                             <p class="p-2">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
-                                        </div>
-                                    </div>
-                                    <div class="panel-1">
-                                        <div class="box-assunto">
-                                            <p class="p-3">Assunto da pergunta aparece aqui</p>
-                                            <p class="p-4">Carlos Henrique Santos</p>
-                                            <p class="p-5">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
-                                            <div class="interagir">
-                                                <img class="svg" src="images/mais-informações.svg" alt="">
-                                                <img src="images/sz-favoritar.svg" alt="">
-                                                <p class="p-6">1 like</p>
-                                                <p class="p-6">1 resposta</p>
+                                    
+                                            <div id="botao-criar-topico" class="flex-topico clicar">
+                                                <a class="a-img-p" href="#" title="Criar tópico"></a>
+                                                    <div class="topico-margin"><img src="images/icon-criar.svg" alt=""></div>
+                                                    <div><p class="p-criar-topico">criar tópico</p></div>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="panel-1">
-                                        <div class="box-assunto box-margin-bottom">
-                                            <p class="p-3">Assunto da pergunta aparece aqui</p>
-                                            <p class="p-4">Carlos Henrique Santos</p>
-                                            <p class="p-5">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
-                                            <div class="interagir">
-                                                <img class="svg" src="images/mais-informações.svg" alt="">
-                                                <img src="images/sz-favoritar.svg" alt="">
-                                                <p class="p-6">1 like</p>
-                                                <p class="p-6">1 resposta</p>
+
+                                    <div id="topicos">
+                                        <div class="panel-1">
+                                            <div class="box-assunto">
+                                                <p class="p-3">Assunto da pergunta aparece aqui</p>
+                                                <p class="p-4">Carlos Henrique Santos</p>
+                                                <p class="p-5">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                                                <div class="interagir">
+                                                    <img class="svg" src="images/mais-informações.svg" alt="">
+                                                    <img src="images/sz-favoritar.svg" alt="">
+                                                    <p class="p-6">1 like</p>
+                                                    <p class="p-6">1 resposta</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel-1">
+                                            <div class="box-assunto box-margin-bottom">
+                                                <p class="p-3">Assunto da pergunta aparece aqui</p>
+                                                <p class="p-4">Carlos Henrique Santos</p>
+                                                <p class="p-5">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                                                <div class="interagir">
+                                                    <img class="svg" src="images/mais-informações.svg" alt="">
+                                                    <img src="images/sz-favoritar.svg" alt="">
+                                                    <p class="p-6">1 like</p>
+                                                    <p class="p-6">1 resposta</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-3">
-                                <div class="panel panel-dewey">
-                                    <div class="panel-heading"> Detalhes </div>
-                                    <div class="panel-body text list-unstyled list-with-separators">
-                                        <div class="form-group">
-                                            <ul class="list list-unstyled">
-                                                <li class="presentation-type">
-                                                    Tipo de Apresentação: <strong>Pôster</strong><br>
-                                                    Eixo temático: <strong>Alimentação e saúde (AS)</strong><br>
-                                                    Palavras-chaves: <strong>Alimentos funcionais, alimentação escolar.</strong>
-                                                    <br><br>
-                                                </li>
-                                                <li class="authors">
-                                                    <strong>Autores:</strong>
-                                                    <br>
-                                                    Galileo Galilei<span class="numbers-color">¹</span>
-                                                    <br>
-                                                    Berta Lange de Morretes<span class="numbers-color">²</span>
-                                                    <br>
-                                                    Isaac Newton<span class="numbers-color">³</span>
-                                                    <br>
-                                                    Cesar Lattes<span class="numbers-color">¹</span>
-                                                    <br> 
-                                                    Stephen Hawking<span class="numbers-color">⁴</span>
-                                                </li>
-                                                <li class="universities"><br>
-                                                    <br>
-                                                
-                                                    ¹Universidade Estadual de Campinas
-                                                    <br>
-                                                    ²Universidade de São Paulo
-                                                    <br>
-                                                    ³Instituto Nacional de Pesquisas Espaciais
-                                                    <br>
-                                                    ⁴Universidade Federal do Rio de Janeiro
-                                                    <br>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </section>
@@ -396,15 +351,5 @@
         </div>
      <courier-root></courier-root>
     </body>
-    <!-- <script>
-        function menuOnClick() {
-            document.getElementById("sidebar").classList.toggle("button-active");
-            document.getElementById("nav").classList.toggle("change");
-            document.getElementById("menu-bg").classList.toggle("change-bg");
-
-            document.getElementById("modal").classList.toggle("modal");
-
-            document.getElementsByTagName("body")[0].classList.toggle("body-overflow-hidden");
-        }
-    </script> -->
+    <script src="script.js"></script>
 </html>

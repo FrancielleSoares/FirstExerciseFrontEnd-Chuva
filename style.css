@@ -524,8 +524,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
             white-space: nowrap;
         }
 
-/* third div*/
 
+        .color {
+            color: #ED7839;
+        }
 
 /* MAIN */
 .main {

@@ -204,6 +204,7 @@ a {
                     .display-second {
                         display: flex;
                         align-items: center;
+                        cursor: pointer;
                     }
                         .z-index-img{
                             z-index: 1;
@@ -527,6 +528,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
         .color {
             color: #ED7839;
+            cursor: pointer;
         }
 
 /* MAIN */
@@ -1162,6 +1164,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
                         }
                         .svg {
                             margin-right: 15px;
+                            cursor: pointer;
+                        }
+                        .sz{
+                            cursor: pointer;
                         }
                         .p-6 {
                             font-family: 'Quicksand';
@@ -1171,6 +1177,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
                             line-height: 19px;
                             color: #757575;
                             margin: 3px 0px 0px 15px;
+                            cursor: pointer;
                         }
 
                         /* Div: CRIAR tópico*/
